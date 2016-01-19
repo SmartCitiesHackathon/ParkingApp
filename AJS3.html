@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Chapter 1, Example 2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="controller.js"></script>
+</head>
+<body ng-app="parkingApp" ng-controller="parkingController" bgcolor="white">
+  <p>Paragraph 1 {{test}} {{driver.id}}</p>
+  <script>
+  // script block 1
+  alert("First Script Block");
+  </script>
+  <p>Paragraph 2</p>
+  <script>
+
+  // script block 2
+  alert("Second Script Block");
+
+
+  //Setting up the endpoint over a url
+
+  // var url = "http://scpark1.tiesv.org/fid-parkingmanagement";
+  /*--- Params -
+  x-atomiton-project-key=KGGNQNFPAAAKYHZW56DIC5SH
+  x-atomiton-project-id=KGGNQNBRAAAKYHZW56XLXLEA
+  ---*/
+  //Setting up the Payload
+  // var payload =
+  // "<Query><Find><ParkingLot><ParkingLotId><ne></ne></ParkingLotId></ParkingLot></Find></Query>";
+  //Sending request to server
+  // $http({
+  // method: 'POST',
+  // url: url,
+  // data: payload,
+  // headers: {
+  // 'Content-Type': 'application/x-www-form-urlencoded',
+  // 'Content-length': payload.length
+  // }
+  // }).then(function successCallback(response) {
+  // //On Success showing the result data in result Tab
+  //   console.log("response is:", response);
+  // }, function errorCallback(response) {
+  // //On error showing the error message
+  //   console.log("error is:", response);
+  // });
+  </script>
+  <p>Paragraph 3</p>
+</body>
+</html>
